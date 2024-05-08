@@ -1,0 +1,29 @@
+<!-- algo.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Salas</title>
+</head>
+<body>
+    <h1>Lista de Salas</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Sala</th>
+                <th>Numero</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% salas.forEach(salas => { %>
+                <tr>
+                    <td><%= salas.sala %></td>
+                    <td><%= salas.numero %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>
